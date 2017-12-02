@@ -1,8 +1,7 @@
 # Tweeter-Engine-Elixir-Phoenix
 
-## Team:
-Amrutha Alaparthy (66905246)
-Meghana Madineni (91978425)
+## Team
+Amrutha Alaparthy (66905246) & Meghana Madineni (91978425)
 
 ## Run Instructions
 1. ### Start  EPMD
