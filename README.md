@@ -6,10 +6,12 @@ Meghana Madineni (91978425)
 
 ## Run Instructions
 1. ### Start  EPMD
-    * `epmd -daemon`
+    * Start the epmd daemon. <br/>
+    `epmd -daemon`
     
 2. ### Build the project
-    * `project4> mix escript.build`
+    * Build the project by running the following command. <br/>
+    `project4> mix escript.build`
 
 3. ### Start the Server
     * To start the server run the following command. <br/>
