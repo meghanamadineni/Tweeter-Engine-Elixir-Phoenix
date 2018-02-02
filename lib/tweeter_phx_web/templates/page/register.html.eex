@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h2>Hello <u> <%= @conn.params["username"] %></u>!!</h2>
+</div>
+
+<div class="row">
+  <!--div class="col-md-12 alert alert-info">
+    Registration, <span id="User"><%= @conn.params["username"] %>!</span>!
+  </div-->
+  <div class="col-md-12 alert alert-info" style="text-align:center">
+    <h2>Registration : <%= @status %></h2> 
+  </div>
+
+</div>

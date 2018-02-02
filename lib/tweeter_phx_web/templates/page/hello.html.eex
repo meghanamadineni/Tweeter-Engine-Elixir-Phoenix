@@ -1,0 +1,83 @@
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!--style type="css/stylesheet">
+  .panel {
+      margin-bottom: 20px;
+      background-color: #fff;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  }
+  .panel-info {
+      border-color: #bce8f1;
+  }
+  .panel-info > .panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+  }
+  
+  .panel-heading {
+      padding: 10px 15px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+  }
+
+</style-->
+
+</head>
+<body>
+<div style="background-color:#5bc0de;color:white;padding:5px;">
+   <h1>Welcome, <span id="username"><%= @username %></span></h1>
+  </div>
+   
+  <!--<div class="jumbotron">
+    <p class="lead">Welcome to Tweeter<br /> The Unified Tweeting Network</p>
+  </div-->
+  
+  <form style= "position:absolute;top:120px;left:850px" class = "form-inline">
+    <label class="sr-only" for="toFollow">Enter Username</label>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0" >
+          <!--<div class="input-group-addon">@</div-->
+          <input class="form-control" placeholder="Username" type="text" id="follow_user" />
+    </div> 
+    <input class="btn btn-primary btn-sm" placeholder="Enter user to follow" value="Follow" id="follow"  type="button"/> 
+   
+  </form>
+   <button id="logout" class="btn btn-info btn-sm pull-right" style= "position:absolute;top:20px;left:1050px">
+         <!-- <span class="glyphicon glyphicon-off"></span--> Sign Out 
+   </button>
+  
+  <div class="clearfix"></div>
+  <div class="panel panel-info">
+    <div class="panel-heading">Tweeter Timeline</div>
+    <div class="panel-body">
+        <textarea id="tweet_text" class="form-control" placeholder="Tweet" rows="3" style="overflow:scroll;resize:none"></textarea><br/>
+        <button id="tweet" class="btn btn-info btn-sm">Tweet</button>
+        <div class="clearfix"></div>
+        <ul class="media-list" id="tweet-list">
+          
+      </ul>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="panel panel-info">
+    <div class="panel-heading">Query Tweets For Hashtags & Mentions</div>
+    <div class="panel-body">
+      <form>
+        <div class="input-group mb-2  mr-sm-4 mb-sm-0">
+            <input class="form-control" placeholder="Hashtag/Mention to query " type="text" id="query_text"/>
+        </div></br>
+        <input class="btn btn-info btn-sm" value="Query" id="query" type="button"/> 
+      </form>
+      <div class="clearfix"></div>
+        <ul class="media-list" id="query-results">
+        </ul>
+    </div>
+  </div>
+  
+</body>

@@ -1,0 +1,29 @@
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+<!--<div class="jumbotron">
+  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
+  <p class="lead"> Unified Tweeter <br />does not compromise speed and maintainability.</p>
+</div-->
+
+<form class="col-md-8">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="name" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter username">
+    <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small-->
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+  <button type="Submit" id="login" class="btn btn-info">Sign In</button>
+  <button type="Submit" id="register" class="btn">Sign Up</button>
+  <div class="row">
+    <!--<div class="col-md-12 alert alert-info" >
+    <p id="status">   </p>
+    <span id="login_status"> </span>
+    </div-->
+  </div>
+</form>
+</body>
